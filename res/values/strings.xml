@@ -1,7 +1,7 @@
 <resources>
 
-    <string name="app_name">Rom Themer</string>
-    <string name="title_activity_main">Rom Themer</string>
+    <string name="app_name">ThemeChooser</string>
+    <string name="title_activity_main">ThemeChooser</string>
     <string name="Theme_stock">Stock Theme</string>
     <string name="Theme_1">Theme 1</string>
     <string name="Theme_2">Theme 2</string>

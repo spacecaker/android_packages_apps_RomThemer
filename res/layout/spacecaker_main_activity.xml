@@ -11,27 +11,24 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignWithParentIfMissing="false">
-	
-		<Button
-			android:id="@+id/button1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginLeft="16dp"
-			android:onClick="but1"
-			android:background="@drawable/stock_theme"
-			android:text="@string/Theme_stock"
-			android:layout_alignParentTop="true"
-			android:layout_alignParentLeft="true"
-			android:layout_marginTop="30dp"
-            android:gravity="fill_vertical"/>
-			
-    </HorizontalScrollView>	
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="but1"
+            android:background="@drawable/stock_theme"
+            android:text="@string/Theme_stock"
+            android:clickable="false"
+    android:enabled="false"
+    android:textColor="#ff000000"/>
+    </HorizontalScrollView>
 	
     <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/horizontalScrollView"
-            android:layout_alignBottom="@+id/horizontalScrollView"
+            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true">
 
         <Button
@@ -41,7 +38,7 @@
             android:onClick="but2"
             android:background="@drawable/theme_1"
             android:text="@string/Theme_1"
-            android:layout_centerHorizontal="true"/>
+            android:textColor="#ff000000"/>
     </HorizontalScrollView>
 	
     <HorizontalScrollView
@@ -49,20 +46,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/horizontalScrollView"
             android:layout_alignParentBottom="true"
-            android:layout_below="@+id/horizontalScrollView"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true">
+            android:layout_alignParentLeft="true">
 
 		<Button
 			android:id="@+id/button3"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_alignLeft="@+id/button2"
-			android:layout_below="@+id/button2"
-			android:layout_marginTop="20dp"
+            android:layout_marginTop="20dp"
 			android:onClick="but3"
 			android:background="@drawable/theme_2"
-			android:text="@string/Theme_2" />
+			android:text="@string/Theme_2"
+            android:textColor="#ff000000"/>
 
 	</HorizontalScrollView>
 	
@@ -70,19 +64,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/horizontalScrollView"
-            android:layout_below="@+id/horizontalScrollView"
-            android:layout_alignRight="@+id/horizontalScrollView">
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
 
 		<Button
 			android:id="@+id/button4"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_alignLeft="@+id/button3"
-			android:layout_below="@+id/button3"
-			android:layout_marginTop="21dp"
+            android:layout_marginTop="21dp"
 			android:onClick="but4"
 			android:background="@drawable/theme_3"
-			android:text="@string/Theme_3" />
+			android:text="@string/Theme_3"
+            android:textColor="#ff000000"/>
 
 	</HorizontalScrollView>
 	
@@ -90,20 +83,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/horizontalScrollView"
+            android:layout_alignParentRight="true"
             android:layout_alignBottom="@+id/horizontalScrollView"
-            android:layout_alignParentRight="true">
+            android:layout_alignParentTop="true">
 
-		<Button
-			android:id="@+id/button5"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignLeft="@+id/button4"
-			android:layout_below="@+id/button4"
-			android:layout_marginTop="24dp"
-			android:onClick="but5"
-			android:background="@drawable/theme_4"
-			android:text="@string/Theme_4" />
-
-	</HorizontalScrollView>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="but5"
+            android:background="@drawable/theme_4"
+            android:text="@string/Theme_4"
+            android:textColor="#ff000000"/>
+    </HorizontalScrollView>
 
 </RelativeLayout>

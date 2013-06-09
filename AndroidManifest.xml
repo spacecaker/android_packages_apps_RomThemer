@@ -1,15 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.spacecaker.romthemer"
     android:versionCode="3"
-    android:versionName="4.4" >
+    android:versionName="3.6" >
 
     <uses-sdk
         android:minSdkVersion="10"
         android:targetSdkVersion="10" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
-    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
-    
+	<uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
     <compatible-screens>
         <screen android:screenSize="normal" android:screenDensity="hdpi"/>
         <screen android:screenSize="large" android:screenDensity="hdpi"/>
