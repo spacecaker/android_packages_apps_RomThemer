@@ -15,7 +15,7 @@
 			android:layout_height="wrap_content"
 			android:layout_marginLeft="16dp"
 			android:onClick="but1"
-			android:background="@drawable/Stock_theme"
+			android:background="@drawable/stock_theme"
 			android:text="@string/Theme_stock"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentLeft="true"
