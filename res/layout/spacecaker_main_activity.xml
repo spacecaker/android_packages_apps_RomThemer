@@ -7,7 +7,10 @@
     <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView">
+            android:id="@+id/horizontalScrollView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignWithParentIfMissing="false">
 	
 		<Button
 			android:id="@+id/button1"
@@ -19,7 +22,8 @@
 			android:text="@string/Theme_stock"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentLeft="true"
-			android:layout_marginTop="30dp"/>
+			android:layout_marginTop="30dp"
+            android:gravity="fill_vertical"/>
 			
     </HorizontalScrollView>	
 	
@@ -27,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/horizontalScrollView"
-            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/horizontalScrollView"
             android:layout_centerHorizontal="true">
 
         <Button
