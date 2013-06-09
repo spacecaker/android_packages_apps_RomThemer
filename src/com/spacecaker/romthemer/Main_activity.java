@@ -70,7 +70,7 @@ public class Main_activity extends Activity {
     	    Process proca = Runtime.getRuntime().exec(new String[]{"am","startservice","-n","com.android.systemui.statusbar.StatusBarService"});
     	    proca.waitFor();
     	    	    
-    	    MessageBox("Done!");
+    	    MessageBox("Statusbar Done!");
     	   
     }
 
@@ -84,7 +84,7 @@ public class Main_activity extends Activity {
         mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
         mSuDataOutputStream.writeBytes("killall com.android.internal.os.ZygoteInit\n");
         mSuDataOutputStream.writeBytes("exit\n");
-        MessageBox("Rebooting!");
+        MessageBox("Please Reboot Now !");
 
     }
     

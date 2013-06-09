@@ -95,7 +95,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spacecaker_main_activity.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="spacecaker_main_activity.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
           <provider editor-type-id="text-editor">
             <state line="53" column="51" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0">
@@ -107,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_activity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main_activity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="79" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.0">
+            <state line="81" column="98" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.5281065">
               <folding />
             </state>
           </provider>
@@ -134,9 +134,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java" />
         <option value="$PROJECT_DIR$/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml" />
+        <option value="$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java" />
       </list>
     </option>
   </component>
@@ -331,12 +331,12 @@
       <workItem from="1370783874552" duration="773000" />
       <workItem from="1370785332912" duration="2903000" />
       <workItem from="1370789102950" duration="6295000" />
-      <workItem from="1370796546432" duration="172000" />
+      <workItem from="1370796546432" duration="483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10143000" />
+    <option name="totallyTimeSpent" value="10454000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -359,11 +359,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="0" width="1580" height="860" extended-state="1" />
-    <editor active="false" />
+    <frame x="10" y="0" width="1580" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.67094016" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.67094016" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.67094016" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.67094016" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -524,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="79" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
       <provider editor-type-id="text-editor">
         <state line="53" column="51" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0">
@@ -539,6 +532,13 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="98" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.5281065">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
