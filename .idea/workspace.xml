@@ -17,7 +17,7 @@
       <layout url="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
         <config>
           <device>AVD_for_Galaxy_Ace</device>
-          <theme>@style/AppTheme</theme>
+          <theme>@style/SpaceTheme</theme>
         </config>
       </layout>
     </layouts>
@@ -26,12 +26,14 @@
     <list default="true" id="62f54525-e716-4be0-b465-cf821baf5c4b" name="Default" comment="" />
     <ignored path="RomThemer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370796547398" ignored="false" />
+    <file path="/Dummy.txt" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370801858313" ignored="false" />
     <file path="/a.html" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370789751212" ignored="false" />
-    <file path="/Main_activity.java" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370791096355" ignored="false" />
-    <file path="/styles.xml" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370792815938" ignored="false" />
+    <file path="/Main_activity.java" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370805146454" ignored="false" />
+    <file path="/styles.xml" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370804671325" ignored="false" />
     <file path="/strings.xml" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370797174917" ignored="false" />
-    <file path="/fragment.java" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370799627972" ignored="false" />
+    <file path="/fragment.java" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370805122960" ignored="false" />
+    <file path="/spacecaker_activity.xml" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370802172451" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="62f54525-e716-4be0-b465-cf821baf5c4b" time="1370804819538" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spacecaker_main_activity.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="spacecaker_main_activity.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
           <provider editor-type-id="text-editor">
-            <state line="48" column="50" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1370799714865" expanded="true" signature="3390:3557" placeholder="..." />
-              </folding>
+            <state line="40" column="4" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer">
@@ -111,19 +111,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="Main_activity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+            <state line="18" column="27" selection-start="413" selection-end="413" vertical-scroll-proportion="-0.7606264">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_activity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="5" selection-start="3405" selection-end="3405" vertical-scroll-proportion="0.0">
+            <state line="18" column="16" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="22" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spacecaker_activity.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/menu/spacecaker_activity.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,9 +174,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/menu/spacecaker_activity.xml" />
         <option value="$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java" />
       </list>
     </option>
@@ -216,6 +245,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="romthemer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RomThemer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RomThemer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -250,6 +297,24 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.RomThemer">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -382,12 +447,14 @@
       <workItem from="1370783874552" duration="773000" />
       <workItem from="1370785332912" duration="2903000" />
       <workItem from="1370789102950" duration="6295000" />
-      <workItem from="1370796546432" duration="4136000" />
+      <workItem from="1370796546432" duration="4317000" />
+      <workItem from="1370801207260" duration="51000" />
+      <workItem from="1370801847587" duration="3765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14107000" />
+    <option name="totallyTimeSpent" value="18104000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -413,22 +480,22 @@
     <frame x="10" y="0" width="1580" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.67236465" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.67236465" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.67094016" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.67094016" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32621083" sideWeight="0.33530962" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.2863248" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.2863248" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32763532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32621083" sideWeight="0.6646904" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967062" sideWeight="0.67236465" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39986825" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967062" sideWeight="0.6737892" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328722" sideWeight="0.6011396" order="4" side_tool="false" content_ui="tabs" />
@@ -528,19 +595,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
       <provider editor-type-id="text-editor">
-        <state line="49" column="51" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370799714865" expanded="true" signature="3390:3557" placeholder="..." />
-          </folding>
+        <state line="48" column="50" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="79" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.0">
+        <state line="3" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
+      <provider editor-type-id="text-editor">
+        <state line="48" column="50" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -548,9 +630,17 @@
     <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
       <provider editor-type-id="text-editor">
         <state line="49" column="51" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370799714865" expanded="true" signature="3390:3557" placeholder="..." />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
+      <provider editor-type-id="text-editor">
+        <state line="49" column="51" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -560,23 +650,16 @@
     <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370799714865" expanded="true" signature="3390:3557" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/spacecaker_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="171" selection-end="171" vertical-scroll-proportion="0.07544379" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="85" selection-end="85" vertical-scroll-proportion="0.10059172">
+        <state line="2" column="22" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -588,23 +671,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="5" selection-start="3405" selection-end="3405" vertical-scroll-proportion="0.0">
+        <state line="18" column="16" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/spacecaker_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/spacecaker_main_activity.xml">
       <provider editor-type-id="text-editor">
-        <state line="48" column="50" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370799714865" expanded="true" signature="3390:3557" placeholder="..." />
-          </folding>
+        <state line="40" column="4" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/spacecaker/romthemer/Main_activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="27" selection-start="413" selection-end="413" vertical-scroll-proportion="-0.7606264">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

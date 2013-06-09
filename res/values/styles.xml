@@ -1,5 +1,5 @@
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.Black" />
+    <style name="SpaceTheme" parent="android:Theme.Black" />
 
 </resources>

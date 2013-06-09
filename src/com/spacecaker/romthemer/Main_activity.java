@@ -87,42 +87,34 @@ public class Main_activity extends Activity {
         MessageBox("Please Reboot Now !");
 
     }
-    
-         public void but1(View view) throws IOException, InterruptedException
+	
+    public void but1(View view) throws IOException, InterruptedException
+    {   
+    	   copyStream("theme_stock.apk","/sdcard/SystemUI.apk");
+           copyStream("theme_stock_framework.apk","/sdcard/framework-res.apk");
+    	   themer();
+           themerframework();
+    }		
+    public void but2(View view) throws IOException, InterruptedException
     {
-          copyStream("theme_stock.apk","/sdcard/SystemUI.apk");
-          copyStream("theme_stock_framework.apk","/sdcard/framework-res.apk");
-          themer();
-          themerframework();
-    }
-           
-      public void but2(View view) throws IOException, InterruptedException
-      {
     	   copyStream("theme_1.apk","/sdcard/SystemUI.apk");
            copyStream("theme_1_framework.apk","/sdcard/framework-res.apk");
     	   themer();
            themerframework();
-      }
-      public void but3(View view) throws IOException, InterruptedException
-      {
+    }
+    public void but3(View view) throws IOException, InterruptedException
+    {
     	   copyStream("theme_2.apk","/sdcard/SystemUI.apk");
            copyStream("theme_2_framework.apk","/sdcard/framework-res.apk");
     	   themer();
            themerframework();
-      }
-      public void but4(View view) throws IOException, InterruptedException
-      {   
+    }
+    public void but4(View view) throws IOException, InterruptedException
+    {   
     	   copyStream("theme_3.apk","/sdcard/SystemUI.apk");
            copyStream("theme_3_framework.apk","/sdcard/framework-res.apk");
     	   themer();
            themerframework();
-      }
-      public void but5(View view) throws IOException, InterruptedException
-      {
-    	   copyStream("theme_4.apk","/sdcard/SystemUI.apk");
-           copyStream("theme_4_framework.apk","/sdcard/framework-res.apk");
-    	   themer();
-           themerframework();
-      }
+    }  
  }
  
