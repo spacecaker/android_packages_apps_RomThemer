@@ -2,4 +2,32 @@
 
     <style name="SpaceTheme" parent="android:Theme.Black" />
 
+    <style name="SpaceCakerText" parent="android:TextAppearance.WindowTitle">
+        <item name="android:textSize">25dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+    <!-- Changes the background color of the title bar -->
+    <style name="CustomWindowTitleBackground">
+        <item name="android:alertDialogIcon">@drawable/ic_menu_space</item>
+        <item name="android:background">#4c6377</item>
+    </style>
+
+    <!-- Set the theme for the window title -->
+    <!-- NOTE: setting android:textAppearence to style defined above -->
+    <style name="SpaceWindowTitle">
+        <item name="android:textAppearance">@style/SpaceCakerText</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+    <!-- Override properties in the default theme -->
+    <!-- NOTE: you must explicitly the windowTitleSize property, the title bar will not re-size automatically, text will be clipped -->
+    <style name="CustomSpaceBar" parent="android:Theme">
+        <item name="android:windowTitleSize">40dip</item>
+        <item name="android:icon">@drawable/ic_menu_space</item>
+        <item name="android:windowTitleStyle">@style/SpaceWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
 </resources>
