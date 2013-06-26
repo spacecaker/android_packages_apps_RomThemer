@@ -76,30 +76,30 @@ public class Main_activity extends Activity {
 
     public void themerframework() throws IOException, InterruptedException
     {
-        Process mSuProcess;
-        mSuProcess = Runtime.getRuntime().exec("su");
-        new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
-        DataOutputStream mSuDataOutputStream = new DataOutputStream(mSuProcess.getOutputStream());
-        mSuDataOutputStream.writeBytes("cp /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
-        mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
-        mSuDataOutputStream.writeBytes("exit\n");
+       	    Process mSuProcess;
+            mSuProcess = Runtime.getRuntime().exec("su");
+            new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
+            DataOutputStream mSuDataOutputStream = new DataOutputStream(mSuProcess.getOutputStream());
+            mSuDataOutputStream.writeBytes("cp /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
+            mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
+            mSuDataOutputStream.writeBytes("exit\n");
 
-        MessageBox("Framework Done!");
+            MessageBox("Framework Done!");
 
     }
 
     public void themertwframework() throws IOException, InterruptedException
     {
-        Process mSuProcess;
-        mSuProcess = Runtime.getRuntime().exec("su");
-        new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
-        DataOutputStream mSuDataOutputStream = new DataOutputStream(mSuProcess.getOutputStream());
-        mSuDataOutputStream.writeBytes("cp /sdcard/twframework-res.apk /system/framework/twframework-res.apk\n");
-        mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/twframework-res.apk /system/framework/twframework-res.apk\n");
-        mSuDataOutputStream.writeBytes("killall com.android.internal.os.ZygoteInit\n");
-        mSuDataOutputStream.writeBytes("exit\n");
-        MessageBox("TW-Framework Done!");
-        MessageBox("Please Reboot Now !");
+            Process mSuProcess;
+            mSuProcess = Runtime.getRuntime().exec("su");
+            new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
+            DataOutputStream mSuDataOutputStream = new DataOutputStream(mSuProcess.getOutputStream());
+            mSuDataOutputStream.writeBytes("cp /sdcard/twframework-res.apk /system/framework/twframework-res.apk\n");
+            mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/twframework-res.apk /system/framework/twframework-res.apk\n");            
+            mSuDataOutputStream.writeBytes("exit\n");
+            MessageBox("TW-Framework Done!");
+            
+            MessageBox("Please Reboot Now !");
 
     }
 	
