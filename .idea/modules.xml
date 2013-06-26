@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RomThemer.iml" filepath="$PROJECT_DIR$/RomThemer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_packages_apps_RomThemer.iml" filepath="$PROJECT_DIR$/android_packages_apps_RomThemer.iml" />
     </modules>
   </component>
 </project>

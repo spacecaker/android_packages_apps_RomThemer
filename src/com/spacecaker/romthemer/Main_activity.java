@@ -105,39 +105,39 @@ public class Main_activity extends Activity {
 	
     public void but1(View view) throws IOException, InterruptedException
     {   
-    	   copyStream("theme_stock.apk","/sdcard/SystemUI.apk");
-           copyStream("theme_stock_framework.apk","/sdcard/framework-res.apk");
-           copyStream("theme_stock_twframework.apk","/sdcard/twframework-res.apk");
-    	   themer();
-           themerframework();
-           themertwframework();
+            copyStream("theme_stock.apk","/sdcard/SystemUI.apk");
+            copyStream("theme_stock_framework.apk","/sdcard/framework-res.apk");
+            copyStream("theme_stock_twframework.apk","/sdcard/twframework-res.apk");
+            themer();
+            themerframework();
+            themertwframework();
     }		
     public void but2(View view) throws IOException, InterruptedException
     {
-    	   copyStream("theme_1.apk","/sdcard/SystemUI.apk");
-           copyStream("theme_1_framework.apk","/sdcard/framework-res.apk");
-           copyStream("theme_1_twframework.apk","/sdcard/twframework-res.apk");
-    	   themer();
-           themerframework();
-           themertwframework();
+            copyStream("theme_1.apk","/sdcard/SystemUI.apk");
+            copyStream("theme_1_framework.apk","/sdcard/framework-res.apk");
+            copyStream("theme_1_twframework.apk","/sdcard/twframework-res.apk");
+            themer();
+            themerframework();
+            themertwframework();
     }
     public void but3(View view) throws IOException, InterruptedException
     {
-    	   copyStream("theme_2.apk","/sdcard/SystemUI.apk");
-           copyStream("theme_2_framework.apk","/sdcard/framework-res.apk");
-           copyStream("theme_2_twframework.apk","/sdcard/twframework-res.apk");
-    	   themer();
-           themerframework();
-           themertwframework();
+     	    copyStream("theme_2.apk","/sdcard/SystemUI.apk");
+            copyStream("theme_2_framework.apk","/sdcard/framework-res.apk");
+            copyStream("theme_2_twframework.apk","/sdcard/twframework-res.apk");
+    	    themer();
+            themerframework();
+            themertwframework();
     }
     public void but4(View view) throws IOException, InterruptedException
     {   
-    	   copyStream("theme_3.apk","/sdcard/SystemUI.apk");
-           copyStream("theme_3_framework.apk","/sdcard/framework-res.apk");
-           copyStream("theme_3_twframework.apk","/sdcard/twframework-res.apk");
-    	   themer();
-           themerframework();
-           themertwframework();
+    	    copyStream("theme_3.apk","/sdcard/SystemUI.apk");
+            copyStream("theme_3_framework.apk","/sdcard/framework-res.apk");
+            copyStream("theme_3_twframework.apk","/sdcard/twframework-res.apk");
+    	    themer();
+            themerframework();
+            themertwframework();
     }  
  }
  
