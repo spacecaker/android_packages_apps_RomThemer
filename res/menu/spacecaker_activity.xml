@@ -2,11 +2,13 @@
     <item android:id="@+id/menu_settings"
         android:title="Made By SpaceCaker"
         android:orderInCategory="50"
+        android:onClick="RomThemerDialog"
         android:showAsAction="never" />
 
 	<item android:id="@+id/menu_settings"
         android:title="Themechooser"
         android:orderInCategory="50"
+        android:onClick="RomThemerDialog2"
         android:showAsAction="never" />
 		
 </menu>

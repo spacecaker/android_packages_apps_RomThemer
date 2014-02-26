@@ -1,16 +1,14 @@
 <resources>
 
-    <style name="SpaceTheme" parent="android:Theme.Black" />
+    <style name="SpaceTheme" parent="android:Theme.Black.NoTitleBar" />
 
     <style name="SpaceCakerText" parent="android:TextAppearance.WindowTitle">
         <item name="android:textSize">25dip</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textStyle">bold|italic</item>
     </style>
     
     <style name="SpaceWindowTitleBackground">
-        <item name="android:alertDialogIcon">@drawable/ic_menu_space</item>
-        <item name="android:background">#4c6377</item>
+        <item name="android:background">@drawable/ab_transparent_dark_holo</item>
     </style>
 
     <style name="SpaceWindowTitle">
@@ -21,10 +19,7 @@
         <item name="android:shadowColor">#000000</item>
     </style>
 
-    <style name="CustomSpaceBar" parent="android:Theme">
-        <item name="android:windowTitleSize">40dip</item>
+    <style name="CustomSpaceBar" parent="android:Theme.Black.NoTitleBar">
         <item name="android:icon">@drawable/ic_menu_space</item>
-        <item name="android:windowTitleStyle">@style/SpaceWindowTitle</item>
-        <item name="android:windowTitleBackgroundStyle">@style/SpaceWindowTitleBackground</item>
     </style>
 </resources>

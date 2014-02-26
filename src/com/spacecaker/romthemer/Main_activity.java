@@ -5,14 +5,17 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-
-
+import com.spacecaker.romthemer.DialogMaker.Keys;
+import com.spacecaker.romthemer.DialogMaker.Type;
 public class Main_activity extends Activity {
 
     @Override
@@ -56,26 +59,29 @@ public class Main_activity extends Activity {
     
     public void themer() throws IOException, InterruptedException
     {
-    	    Process mSuProcess;
-    	    mSuProcess = Runtime.getRuntime().exec("su");
-    	    new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
-    	    DataOutputStream mSuDataOutputStream = new DataOutputStream(mSuProcess.getOutputStream());
-    	    mSuDataOutputStream.writeBytes("cp /sdcard/SystemUI.apk /system/app/SystemUI.apk\n");
-    	    MessageBox("Killing this bitch!");
-    	    mSuDataOutputStream.writeBytes("killall com.android.systemui\n");
-    	    Thread.sleep(2000);
-            mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/SystemUI.apk /system/app/SystemUI.apk\n");
-    	    mSuDataOutputStream.writeBytes("exit\n");
-    	    MessageBox("Starting SystemUI!");
-    	    Process proca = Runtime.getRuntime().exec(new String[]{"am","startservice","-n","com.android.systemui.statusbar.StatusBarService"});
-    	    proca.waitFor();
-    	    	    
-    	    MessageBox("Statusbar Done!");
-    	   
+		try{ 
+		    Process mSuProcess;
+		    mSuProcess = Runtime.getRuntime().exec("su");
+		    new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
+		    DataOutputStream mSuDataOutputStream = new DataOutputStream(mSuProcess.getOutputStream());
+		    mSuDataOutputStream.writeBytes("cp /sdcard/SystemUI.apk /system/app/SystemUI.apk\n");
+		    MessageBox("Killing this bitch!");
+		    mSuDataOutputStream.writeBytes("killall com.android.systemui\n");
+		    Thread.sleep(2000);
+	        mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/SystemUI.apk /system/app/SystemUI.apk\n");
+		    mSuDataOutputStream.writeBytes("exit\n");
+		    MessageBox("Starting SystemUI!");
+		    Process proca = Runtime.getRuntime().exec(new String[]{"am","startservice","-n","com.android.systemui.statusbar.StatusBarService"});
+		    proca.waitFor();    	    	   
+		    MessageBox("Statusbar Done!");			
+		}
+		catch(Exception ex){           	
+		}		    	   
     }
 
     public void themerframework() throws IOException, InterruptedException
     {
+		try{ 
        	    Process mSuProcess;
             mSuProcess = Runtime.getRuntime().exec("su");
             new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
@@ -83,13 +89,15 @@ public class Main_activity extends Activity {
             mSuDataOutputStream.writeBytes("cp /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
             mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/framework-res.apk /system/framework/framework-res.apk\n");
             mSuDataOutputStream.writeBytes("exit\n");
-
-            MessageBox("Framework Done!");
-
+            MessageBox("Framework Done!");			
+		}
+		catch(Exception ex){           	
+		}		
     }
 
     public void themertwframework() throws IOException, InterruptedException
     {
+		try{ 
             Process mSuProcess;
             mSuProcess = Runtime.getRuntime().exec("su");
             new DataOutputStream(mSuProcess.getOutputStream()).writeBytes("mount -o remount rw /system\n");
@@ -97,47 +105,135 @@ public class Main_activity extends Activity {
             mSuDataOutputStream.writeBytes("cp /sdcard/twframework-res.apk /system/framework/twframework-res.apk\n");
             mSuDataOutputStream.writeBytes("chmod 0644 /sdcard/twframework-res.apk /system/framework/twframework-res.apk\n");            
             mSuDataOutputStream.writeBytes("exit\n");
-            MessageBox("TW-Framework Done!");
-            
-            MessageBox("Please Reboot Now !");
-
+            MessageBox("TW-Framework Done!");            
+            MessageBox("Please Reboot Now !");			
+		}
+		catch(Exception ex){           	
+		}		
     }
 	
     public void but1(View view) throws IOException, InterruptedException
     {   
-            copyStream("theme_stock.apk","/sdcard/SystemUI.apk");
-            copyStream("theme_stock_framework.apk","/sdcard/framework-res.apk");
-            copyStream("theme_stock_twframework.apk","/sdcard/twframework-res.apk");
-            themer();
-            themerframework();
-            themertwframework();
+		try{ 
+    		try{ 
+    			copyStream("/stock/app/SystemUI.apk","/sdcard/SystemUI.apk");
+    	    	themer();
+				}
+				catch(Exception ex){           	
+				}
+    		try{ 
+            	copyStream("/stock/framework/framework-res.apk","/sdcard/framework-res.apk");
+                themerframework();
+    			}
+    			catch(Exception ex){           	
+    			}
+    		try{ 
+            	copyStream("/stock/framework/twframework-res.apk","/sdcard/twframework-res.apk");
+                themertwframework();
+    			}
+    			catch(Exception ex){           	
+    			} 				
+			}
+			catch(Exception ex){ 
+			}	
     }		
     public void but2(View view) throws IOException, InterruptedException
     {
-            copyStream("theme_1.apk","/sdcard/SystemUI.apk");
-            copyStream("theme_1_framework.apk","/sdcard/framework-res.apk");
-            copyStream("theme_1_twframework.apk","/sdcard/twframework-res.apk");
-            themer();
-            themerframework();
-            themertwframework();
+		try{ 
+    		try{ 
+    			copyStream("/theme1/app/SystemUI.apk","/sdcard/SystemUI.apk");
+    	    	themer();
+				}
+				catch(Exception ex){           	
+				}
+    		try{ 
+            	copyStream("/theme1/framework/framework-res.apk","/sdcard/framework-res.apk");
+                themerframework();
+    			}
+    			catch(Exception ex){           	
+    			}
+    		try{ 
+            	copyStream("/theme1/framework/twframework-res.apk","/sdcard/twframework-res.apk");
+                themertwframework();
+    			}
+    			catch(Exception ex){           	
+    			} 				
+			}
+			catch(Exception ex){ 	
+			}	
     }
     public void but3(View view) throws IOException, InterruptedException
     {
-     	    copyStream("theme_2.apk","/sdcard/SystemUI.apk");
-            copyStream("theme_2_framework.apk","/sdcard/framework-res.apk");
-            copyStream("theme_2_twframework.apk","/sdcard/twframework-res.apk");
-    	    themer();
-            themerframework();
-            themertwframework();
+		try{ 
+    		try{ 
+    			copyStream("/theme2/app/SystemUI.apk","/sdcard/SystemUI.apk");
+    	    	themer();
+				}
+				catch(Exception ex){           	
+				}
+    		try{ 
+            	copyStream("/theme2/framework/framework-res.apk","/sdcard/framework-res.apk");
+                themerframework();
+    			}
+    			catch(Exception ex){           	
+    			}
+    		try{ 
+            	copyStream("/theme2/framework/twframework-res.apk","/sdcard/twframework-res.apk");
+                themertwframework();
+    			}
+    			catch(Exception ex){           	
+    			} 				
+			}
+			catch(Exception ex){ 
+			}	
     }
     public void but4(View view) throws IOException, InterruptedException
     {   
-    	    copyStream("theme_3.apk","/sdcard/SystemUI.apk");
-            copyStream("theme_3_framework.apk","/sdcard/framework-res.apk");
-            copyStream("theme_3_twframework.apk","/sdcard/twframework-res.apk");
-    	    themer();
-            themerframework();
-            themertwframework();
-    }  
+		try{ 
+    		try{ 
+    			copyStream("/theme3/app/SystemUI.apk","/sdcard/SystemUI.apk");
+    	    	themer();
+				}
+				catch(Exception ex){           	
+				}
+    		try{ 
+            	copyStream("/theme3/framework/framework-res.apk","/sdcard/framework-res.apk");
+                themerframework();
+    			}
+    			catch(Exception ex){           	
+    			}
+    		try{ 
+            	copyStream("/theme3/framework/twframework-res.apk","/sdcard/twframework-res.apk");
+                themertwframework();
+    			}
+    			catch(Exception ex){           	
+    			} 				
+			}
+			catch(Exception ex){ 	
+			}		    		
+    } 
+    
+	public void RomThemerDialog(MenuItem item) {
+		HashMap<Keys, String> params = new HashMap<Keys, String>();
+		params.put(Keys.BUTTON_1, "OK");
+		params.put(Keys.MESSAGE, (String) getResources().getText(R.string.about_rom_themer));
+
+		new DialogMaker(this, params, Type.STANDARD) {
+
+			@Override
+			protected void dealWithTheButton1() {
+			}
+
+			@Override
+			protected void dealWithTheButton2() {
+			}
+
+		};
+	}	
+	
+    public void RomThemerDialog2(MenuItem item){
+        Toast.makeText(this, "App Developed By SpaceCaker." +
+        		"RomThemer. 2014", Toast.LENGTH_LONG).show();
+    } 
  }
  
